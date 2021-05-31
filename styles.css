@@ -1,0 +1,140 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  line-height: 1.6;
+  background: hsl(0, 0%, 95%);
+}
+
+.container {
+  width: 85%;
+  max-width: 65em;
+  margin: 0 auto;
+  height: 60em;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  padding-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: hsl(0, 0%, 95%);
+  font-weight: 0;
+  border: 2px hsl(0, 0%, 95%) solid;
+  outline: none;
+  padding: 0.5em 1.25em;
+  background: hsl(0, 0%, 95%);
+  border-radius: 50px;
+  transition: transform 250ms ease-in-out, opacity 250ms linear;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.btn:hover {
+  background: hsl(0, 0%, 95%);
+}
+
+.btn-1:hover {
+  color: hsl(31, 77%, 52%);
+}
+
+.btn-2:hover {
+  color: hsl(184, 100%, 22%);
+}
+
+.btn-3:hover {
+  color: hsl(179, 100%, 13%);
+}
+
+.btn-1 {
+  background: hsl(31, 77%, 52%);
+}
+
+.btn-2 {
+  background: hsl(184, 100%, 22%);
+}
+
+.btn-3 {
+  background: hsl(179, 100%, 13%);
+}
+
+.section {
+  padding-left: 50px;
+  padding-right: 60px;
+  padding-top: 3rem;
+  height: 30rem;
+  padding-bottom: 450px;
+}
+
+.section-1 {
+  background: hsl(31, 77%, 52%);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.section-2 {
+  background: hsl(184, 100%, 22%);
+}
+
+.section-3 {
+  background: hsl(179, 100%, 13%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.section-title {
+  font-family: 'Big Shoulders Display';
+  font-size: 38px;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+  letter-spacing: 0.6px;
+  padding-bottom: 1.5rem;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 15px;
+  width: 13rem;
+  padding-bottom: 5rem;
+}
+
+@media (max-width: 414px) {
+  .container {
+    margin-top: 150px;
+    height: 80em;
+    margin-bottom: 200px;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .section-1 {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+  }
+
+  .section-3 {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 0;
+  }
+}
